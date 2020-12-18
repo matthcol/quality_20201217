@@ -31,7 +31,8 @@ class Point2D:
     # methode objet métier
     def distance(self, other):
         # check or not
-        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
+        #return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)
+        return math.hypot(self.x - other.x, self.y - other.y)
     
     # TODO: redefine also __hash__
     
